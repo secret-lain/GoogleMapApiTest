@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="material_dialog_content_padding">24dp</dimen>
+    <dimen name="material_dialog_between_body_title">20dp</dimen>
+    <dimen name="material_dialog_between_button">8dp</dimen>
+</resources>

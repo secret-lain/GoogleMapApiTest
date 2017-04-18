@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:layout_weight="6"
+        tools:context="com.googlemapapitest.MapsActivity" />
+
+    <LinearLayout
+        android:id="@+id/status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/lat_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lat" />
+        <TextView
+            android:id="@+id/lng_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lng" />
+        <TextView
+            android:id="@+id/addr_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/button_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/find_my_location_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내 위치 찾기" />
+
+            <Button
+                android:id="@+id/custom_location_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="위치직접입력" />
+        </android.support.v7.widget.GridLayout>
+    </ScrollView>
+</LinearLayout>
+
